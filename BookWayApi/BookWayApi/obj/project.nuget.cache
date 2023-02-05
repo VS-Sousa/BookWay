@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "DdkyXWV9jDU8J+jLT3PxzdIjdiE6VyuWSFkAsY7GoUibuYvGUq1mbVnNmrZjM+G5NfxEaScVl4pRhKvCdKhrtw==",
+  "dgSpecHash": "KDF1I++eRA1FrhVJclUmSxWk5hfS3kpZbGMMiCHCemiQ6CiJiHovuv5yyBC4l/d6NCC5K0F3GNxnmJz4OltIZA==",
   "success": true,
-  "projectFilePath": "D:\\Pessoal\\Vinicius\\projects\\personal\\MVC_dotNET_Vue_Mongo\\api\\BookWayApi\\BookWayApi\\BookWayApi.csproj",
+  "projectFilePath": "C:\\Users\\vinis\\Documents\\Pessoal\\projects\\personal\\BookWay\\BookWayApi\\BookWayApi\\BookWayApi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\vinis\\.nuget\\packages\\awssdk.core\\3.7.100.14\\awssdk.core.3.7.100.14.nupkg.sha512",
     "C:\\Users\\vinis\\.nuget\\packages\\awssdk.securitytoken\\3.7.100.14\\awssdk.securitytoken.3.7.100.14.nupkg.sha512",

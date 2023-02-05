@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Pessoal\\Vinicius\\projects\\personal\\MVC_dotNET_Vue_Mongo\\api\\BookWayApi\\BookWayApi\\BookWayApi.csproj": {}
+    "C:\\Users\\vinis\\Documents\\Pessoal\\projects\\personal\\BookWay\\BookWayApi\\BookWayApi\\BookWayApi.csproj": {}
   },
   "projects": {
-    "D:\\Pessoal\\Vinicius\\projects\\personal\\MVC_dotNET_Vue_Mongo\\api\\BookWayApi\\BookWayApi\\BookWayApi.csproj": {
+    "C:\\Users\\vinis\\Documents\\Pessoal\\projects\\personal\\BookWay\\BookWayApi\\BookWayApi\\BookWayApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Pessoal\\Vinicius\\projects\\personal\\MVC_dotNET_Vue_Mongo\\api\\BookWayApi\\BookWayApi\\BookWayApi.csproj",
+        "projectUniqueName": "C:\\Users\\vinis\\Documents\\Pessoal\\projects\\personal\\BookWay\\BookWayApi\\BookWayApi\\BookWayApi.csproj",
         "projectName": "BookWayApi",
-        "projectPath": "D:\\Pessoal\\Vinicius\\projects\\personal\\MVC_dotNET_Vue_Mongo\\api\\BookWayApi\\BookWayApi\\BookWayApi.csproj",
+        "projectPath": "C:\\Users\\vinis\\Documents\\Pessoal\\projects\\personal\\BookWay\\BookWayApi\\BookWayApi\\BookWayApi.csproj",
         "packagesPath": "C:\\Users\\vinis\\.nuget\\packages\\",
-        "outputPath": "D:\\Pessoal\\Vinicius\\projects\\personal\\MVC_dotNET_Vue_Mongo\\api\\BookWayApi\\BookWayApi\\obj\\",
+        "outputPath": "C:\\Users\\vinis\\Documents\\Pessoal\\projects\\personal\\BookWay\\BookWayApi\\BookWayApi\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -26,6 +26,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -63,7 +64,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -75,7 +77,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     }

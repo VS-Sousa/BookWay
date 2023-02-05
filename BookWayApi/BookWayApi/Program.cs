@@ -1,3 +1,11 @@
+using BookWayApi.Modules.Books.Repositories;
+using BookWayApi.Modules.Genres.Repositories;
+using BookWayApi.Settings;
+using Microsoft.Extensions.FileProviders;
+using MongoDB.Bson;
+using MongoDB.Bson.Serialization;
+using MongoDB.Bson.Serialization.Serializers;
+using MongoDB.Driver;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Serialization;
 
@@ -20,8 +28,22 @@ namespace BookWayApi
                 options => options.SerializerSettings.ReferenceLoopHandling=ReferenceLoopHandling.Ignore)
                 .AddNewtonsoftJson(options => options.SerializerSettings.ContractResolver = new DefaultContractResolver());
 
+            BsonSerializer.RegisterSerializer(new GuidSerializer(BsonType.String));
+
+            builder.Services.AddSingleton<IMongoClient>(serviceProvider =>
+            {
+                var settings = builder.Configuration.GetSection("MongoDbSettings").Get<MongoDbSettings>();
+                return new MongoClient(settings.ConnectionString);
+            });
+
+            builder.Services.AddSingleton<IGenresRepository, MongoGenresRepository>();
+            builder.Services.AddSingleton<IBooksRepository, MongoBooksRepository>();
+
             // Add services to the container.
-            builder.Services.AddControllers();
+            builder.Services.AddControllers(options =>
+            {
+                options.SuppressAsyncSuffixInActionNames = false;
+            });
 
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
